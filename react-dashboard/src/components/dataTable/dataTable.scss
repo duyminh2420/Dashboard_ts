@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+
+.dataTable {
+  .dataGrid {
+    background: $soft-bg;
+    padding: 16px;
+    border: none;
+
+    .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Tablet Responsiveness
+@media (max-width: 768px) {
+  .dataTable {
+    .dataGrid {
+      padding: 12px;
+      font-size: 13px;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+
+      .actions img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+// Mobile Responsiveness
+@media (max-width: 480px) {
+  .dataTable {
+    .dataGrid {
+      padding: 8px;
+      font-size: 12px;
+      overflow-x: auto;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .actions {
+        gap: 6px;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .MuiDataGrid-toolbarContainer {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}

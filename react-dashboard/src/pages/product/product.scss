@@ -1,0 +1,33 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+// Tablet Responsiveness
+@media (max-width: 768px) {
+  .product {
+    padding: 12px;
+    gap: 12px;
+  }
+}
+
+// Mobile Responsiveness
+@media (max-width: 480px) {
+  .product {
+    padding: 8px;
+    gap: 10px;
+
+    .info,
+    .form {
+      width: 100%;
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

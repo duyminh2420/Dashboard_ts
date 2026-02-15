@@ -1,0 +1,30 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// Tablet Responsiveness
+@media (max-width: 768px) {
+  .login {
+    padding: 15px;
+  }
+}
+
+// Mobile Responsiveness
+@media (max-width: 480px) {
+  .login {
+    padding: 10px;
+
+    form {
+      max-width: 100%;
+    }
+  }
+}

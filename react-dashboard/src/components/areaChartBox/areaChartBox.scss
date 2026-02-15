@@ -1,0 +1,30 @@
+.areaChartBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .chart {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+// Tablet Responsiveness
+@media (max-width: 768px) {
+  .areaChartBox {
+    .chart {
+      height: 250px;
+    }
+  }
+}
+
+// Mobile Responsiveness
+@media (max-width: 480px) {
+  .areaChartBox {
+    .chart {
+      height: 200px;
+    }
+  }
+}
